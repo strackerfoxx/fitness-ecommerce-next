@@ -1,0 +1,118 @@
+/* ++++++++++++++HEADER++++++++++++++ */
+
+.center{
+  text-align: center;
+  margin: 2rem;
+}
+.error{
+  margin-top: 40vh;
+  color: red;
+}
+
+.header{
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.504), rgba(255, 255, 255, 0.658)), url(/img/cabecera.jpeg);
+  padding: 6rem 0;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navegacion{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+} 
+@media (min-width: 768px) {
+.navegacion{
+    margin-top: 0rem;
+  } 
+}
+
+.header .navegacion a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.6rem;
+  padding: .5rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  border-radius: .4rem;
+}
+.header .navegacion a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.header .navegacion .prime{
+  background-color: white;
+  color: black;
+}
+.header .navegacion .prime:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+
+/* ++++++++++++++FOOTER++++++++++++++ */
+
+.footer{
+  background-color: var(--black);
+  padding: 3rem 0;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .footer .contenido{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer .navegacion{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:768px ){
+  .footer .navegacion{
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.footer .navegacion a,
+.footer .copyright{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer .navegacion a:last-of-type {
+  display: none;
+}
+
+.footer .navegacion .text-prime{
+  color: var(--primary)
+}
+.footer .navegacion .text-prime:hover {
+  color: var(--white);
+}
+.footer .navegacion a:hover {
+  color: var(--primary);
+}
